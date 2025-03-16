@@ -84,4 +84,23 @@ services:
     volumes:
       - ./backend:/app
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+## Chạy ứng dụng với Docker Compose
 
+Để khởi động ứng dụng, chạy câu lệnh sau trong terminal:
+
+```bash
+docker-compose up --build
+
+
+- **Lợi ích**: 
+  - Câu lệnh được tô sáng (syntax highlighting) nếu xem trên các nền tảng như GitHub, GitLab.
+  - Rõ ràng, dễ sao chép.
+
+---
+
+### 2. Sử dụng Inline Code cho câu lệnh ngắn
+Nếu câu lệnh ngắn và nằm trong đoạn văn, bạn có thể dùng một dấu backtick (`) để bọc câu lệnh.
+
+#### Ví dụ:
+```markdown
+Để dừng ứng dụng, dùng lệnh `docker-compose down`.
